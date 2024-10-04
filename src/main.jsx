@@ -7,6 +7,7 @@ import ConteudoPrincipal from './Components/ConteudoPrincipal/ConteudoPrincipal.
 
 import App from './App.jsx'
 import Projetos from './Pages/Projetos.jsx'
+import PageNotFound from './Pages/PageNotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
     element: <App/>,
     children:[
       {index:true, element: <ConteudoPrincipal/>},
-      {path: "/projetos", element: <Projetos/>}
+      {path: "/projetos", element: <Projetos/>},
+      {path: "*", element: <PageNotFound/>}
     ]
   }
 ])

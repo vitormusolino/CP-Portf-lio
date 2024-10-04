@@ -1,5 +1,9 @@
+import Sobre from "../Sobre/Sobre"
+import Habilidades from "../Habilidades/Habilidades";
+
 export default function ConteudoPrincipal() {
     return ( <>
-        <p>OLA</p>
+        <Sobre/>
+        <Habilidades/>
         </> );
 }
